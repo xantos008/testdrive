@@ -1,0 +1,646 @@
+.squareText {
+  padding: 2px 11px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.squareText img {
+  height: 17px;
+  margin-bottom: 2px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  margin: 0px;
+  padding: 4px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 8px solid #053b15;
+}
+
+.icon {
+  height: 15px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  background: linear-gradient(310.45deg, #46AC56 25.23%, #38B179 76.69%);
+  color: #053b15;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover{
+  background: linear-gradient(282.53deg, #38B179 25.23%, #46AC56 76.69%);
+}
+.btn p {
+    margin: 0;
+}
+.btnSwitch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #1fde39;
+  color: #053b15;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btnIcon {
+  padding: 5px 6px 5px 25px;
+}
+
+.btn:hover, .btnSwitch:hover {
+  background-color: #1ff93a;
+}
+
+.btn:hover .circle {
+  /*background-color: #1ff93a;*/
+  background-color: transparent;
+}
+
+.square {
+  display: inline-block;
+  /*background-color: #053b15;*/
+  border-radius: 41px;
+  margin-left: 25px;
+  color: #1fde39;
+}
+
+.contrast {
+  background: #1c1c2d;
+  border: 1px solid #10bb27;
+  color: #10bb27;
+  font-weight: 400;
+  cursor: default;
+}
+
+.contrast .square {
+  background-color: #0d0d1a;
+}
+
+.contrast:hover {
+  background: #1c1c2d;
+}
+
+.blue {
+  background: rgba(24, 34, 75, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(24, 34, 75, 1) 0%,
+    rgba(49, 82, 127, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(24, 34, 75, 1)),
+    color-stop(100%, rgba(49, 82, 127, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(24, 34, 75, 1) 0%,
+    rgba(49, 82, 127, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(24, 34, 75, 1) 0%,
+    rgba(49, 82, 127, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(24, 34, 75, 1) 0%,
+    rgba(49, 82, 127, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(24, 34, 75, 1) 0%,
+    rgba(49, 82, 127, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#18224b', endColorstr='#31527f', GradientType=0);
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.blue:hover {
+  background: #0f1831;
+}
+
+.blue:hover .circle {
+  background: #0f1831;
+}
+
+.blue .circle {
+  background: #0f1831;
+  width: 24px;
+  height: 24px;
+  margin: 4px 4px 4px 6px;
+  border: none;
+}
+
+.blue .square {
+  background-color: #0f1831;
+  color: #ffffff;
+}
+.blue .icon {
+  height: 24px;
+}
+
+.btnDisable {
+  color: #898990;
+  background-color: #121220;
+  border: 1px solid #898990;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  cursor: default;
+}
+
+.btnDisable:hover {
+  background-color: #121220;
+}
+
+.mini {
+  display: inline-block;
+  color: rgba(194, 194, 194, 0.5);
+  background-color: #0d0d1a;
+  border-radius: 3px;
+  margin-top: 20px;
+  padding: 2px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.mini img {
+  height: 13px;
+  margin: 0 0 -2px 15px;
+}
+
+.mini:hover {
+  color: #d5d5d5;
+}
+
+.red {
+  color: #fe0d36;
+  border: 1px solid #fe0d36;
+  background: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.red:hover {
+  background: #0c0c17;
+}
+
+.loader {
+  position: absolute;
+  top: 19px;
+  left: -13px;
+  width: 100% !important;
+}
+.loaderAllModal{
+	position: absolute;
+	top: 19px;
+	width: 100% !important;
+}
+.loaderButton {
+  position: absolute;
+  left: 0;
+  width: 100% !important;
+}
+.disable {
+  background-color: #053b15;
+  pointer-events: none;
+  transition: none;
+  box-shadow: none;
+  cursor: default;
+  color: transparent;
+}
+
+.disable:hover {
+  background-color: #053b15;
+}
+
+.disable .square {
+  opacity: 0.7;
+}
+
+.disable.btn:hover .btn__circle {
+  background-color: #1fde39;
+}
+
+.chainButton {
+	padding: 8px 8px 8px 25px;
+    background: rgba(26, 26, 39, 0.2);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	font-size: 15px;
+	cursor: pointer;
+}
+.activevka, .chainButton:hover{
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.18);
+	background: #1A1A27;
+}
+.chainButtonCircle{
+	width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    position: relative;
+}
+.chainButtonIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.wombatCircle {
+  width: 22px;
+  height: 22px;
+  margin: 0px;
+  padding: 9px;
+  background-color: transparent;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(31, 117, 45, 0.3);
+  border-radius: 40px;
+}
+.wombatIcon {
+  height: 22px;
+}
+.wombatBtn {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  background: linear-gradient(310.45deg, #46AC56 25.23%, #38B179 76.69%);
+  color: #fff;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.wombatBtnIcon {
+  padding: 8px 8px 8px 83px;
+}
+
+.wombatSquare {
+  display: inline-block;
+  /*background-color: #053b15;*/
+  border-radius: 41px;
+  margin-left: 63px;
+  color: #1fde39;
+}
+
+
+
+
+
+.SecondWombatBtn {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  background: linear-gradient(310.45deg, #46AC56 25.23%, #38B179 76.69%);
+  color: #fff;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.SecondWombatCircle {
+  width: 22px;
+  height: 22px;
+  margin: 0px;
+  padding: 9px;
+  background-color: transparent;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(31, 117, 45, 0.3);
+  border-radius: 40px;
+}
+.SecondWombatIcon {
+  height: 22px;
+}
+.SecondWombatBtnIcon {
+  padding: 8px 8px 8px 27px;
+}
+
+.SecondWombatSquare {
+  display: inline-block;
+  /*background-color: #053b15;*/
+  border-radius: 41px;
+  margin-left: 19px;
+  color: #1fde39;
+}
+
+.btnIconFooter{
+	padding: 0;
+    margin: 0;
+    background: linear-gradient(292.72deg, #46AC56 25.23%, #38B179 76.69%);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+	width: 80px;
+    height: 38px;
+}
+.btnIconFooter .square{
+    color: #fff;
+    padding: 0;
+    margin: 0;
+	width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.newBtn {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #053b15;
+  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-clip-path: polygon(15px 0, calc(100% - 15px) 0%, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0 50%);
+  clip-path: polygon(15px 0, calc(100% - 15px) 0%, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0 50%);
+  transition: clip-path .15s ease-out;
+}
+
+.bordered{
+  padding: 2px;
+  background: #A6F57E;
+  -webkit-clip-path: polygon(15px 0, calc(100% - 15px) 0%, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0 50%);
+  clip-path: polygon(15px 0, calc(100% - 15px) 0%, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0 50%);
+  transition: all .15s ease-out;
+}
+.backgroundBlock{
+  background: #000;
+  -webkit-clip-path: polygon(15px 0, calc(100% - 15px) 0%, calc(100% - 1px) 50%, calc(100% - 15px) 100%, 15px 100%, 1px 50%);
+  clip-path: polygon(15px 0, calc(100% - 15px) 0%, calc(100% - 1px) 50%, calc(100% - 15px) 100%, 15px 100%, 1px 50%);
+  transition: clip-path .15s ease-out;
+}
+.textPadBlock{
+	background: url(/img/btn-gr.jpg);
+    background-blend-mode: overlay, overlay, normal;
+    box-shadow: inset -3px 3px 3px rgba(0, 0, 0, 0.16);
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: 15px 70px 15px 35px;
+}
+.iconText{
+	font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+	transition: clip-path .15s ease-out;
+}
+.newSquare {
+	background: linear-gradient(208.54deg, #E2FFC6 10.73%, #A1F478 31.19%, #77CF42 89.27%), #FFFFFF;
+	-webkit-clip-path: polygon(13px 0, calc(100% - 13px) 0%, calc(100% - 1px) 50%, calc(100% - 13px) 100%, 13px 100%, 1px 50%);
+	clip-path: polygon(13px 0, calc(100% - 13px) 0%, calc(100% - 1px) 50%, calc(100% - 13px) 100%, 13px 100%, 1px 50%);
+	width: 48px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 20px;
+	transition: clip-path .15s ease-out;
+}
+.newSquareText {
+	position: absolute;
+    right: 6px;
+}
+.newSquareText img {
+	
+}
+.newBtn:hover .bordered{
+	background: #c8faae;
+}
+.newBtn:hover .newSquare{
+	background: linear-gradient(208.54deg, #EAFFD6 10.73%, #BCFF9B 31.19%, #8CE357 89.27%);
+}
+.newBtn:hover .textPadBlock{
+	background: url(/img/btn-gr-hover.jpg);
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.shadowBlock{
+	filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.15));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.simpleButton{
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #053b15;
+  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.simpleButton .backgroundBlock{
+	padding: 0;
+}
+.simpleButtonImage{
+	width: 50px;
+    height: 42.77px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.simpleButton, .simpleButton .bordered, .simpleButton .backgroundBlock {
+	-webkit-clip-path: polygon(14px 0, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0 50%);
+	clip-path: polygon(14px 0, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0 50%);
+}
+.simpleButton .backgroundBlock {
+	-webkit-clip-path: polygon(13px 0, calc(100% - 13px) 0%, 100% 50%, calc(100% - 13px) 100%, 13px 100%, 0 50%);
+	clip-path: polygon(13px 0, calc(100% - 13px) 0%, 100% 50%, calc(100% - 13px) 100%, 13px 100%, 0 50%);
+}
+.simpleButtonImage img {
+    position: relative;
+    left: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.offtenSimpleButton {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #053b15;
+  -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: clip-path .15s ease-out;
+}
+.offtenSimpleButton .bordered{
+	background: radial-gradient(66.29% 66.29% at 72.22% 0.82%, rgba(221, 240, 243, 0.6) 0%, rgba(199, 219, 223, 0.5) 100%);
+	background-blend-mode: overlay, overlay, normal;
+	padding: 2px;
+}
+.offtenSimpleButton .backgroundBlock{
+	background: none;
+    padding: 0;
+}
+.offtenSimpleButton .iconText{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    background-size: calc(100% + 45px);
+	background-position: top center;
+    background-repeat: no-repeat;
+}
+.offtenSimpleButton, .offtenSimpleButton .bordered {
+	-webkit-clip-path: polygon(12px 0, calc(100% - 12px) 0%, 100% 50%, calc(100% - 12px) 100%, 12px 100%, 0 50%);
+	clip-path: polygon(12px 0, calc(100% - 12px) 0%, 100% 50%, calc(100% - 12px) 100%, 12px 100%, 0 50%);
+	transition: clip-path .15s ease-out;
+}
+.offtenSimpleButton .backgroundBlock {
+	-webkit-clip-path: polygon(11px 0, calc(100% - 11px) 0%, 100% 50%, calc(100% - 11px) 100%, 11px 100%, 0 50%);
+	clip-path: polygon(11px 0, calc(100% - 11px) 0%, 100% 50%, calc(100% - 11px) 100%, 11px 100%, 0 50%);
+	transition: clip-path .15s ease-out;
+}
+.offtenSimpleButton .textPadBlock{
+	background: url(/img/btn-dark.jpg);
+    background-blend-mode: overlay, overlay, normal;
+    box-shadow: inset -3px 3px 3px rgba(0, 0, 0, 0.16);
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: 15px 50px 15px 50px;
+}
+.offtenSimpleButton:hover .bordered{
+	background: #8f9b9d;
+}
+.offtenSimpleButton:hover .textPadBlock{
+	background: url(/img/btn-dark-hover.jpg);
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.grey{
+	
+}
+.grey .bordered{
+	background: radial-gradient(66.29% 66.29% at 72.22% 0.82%, rgba(221, 240, 243, 0.6) 0%, rgba(199, 219, 223, 0.5) 100%);
+	transition: none;
+}
+
+.grey .textPadBlock{
+	background: url(/img/btn-dark.jpg);
+}
+.grey .newSquare{
+	background: linear-gradient(210.14deg, #95B0B6 11.75%, #475F64 88.25%);
+}
+.grey:hover .newSquare{
+	background: linear-gradient(208.54deg, #D6E9ED 10.73%, #8FB9C1 89.27%);
+	transition: none;
+}
+.grey:hover .bordered{
+	background: #8f9b9d;
+}
+.grey:hover .textPadBlock{
+	background: url(/img/btn-dark-hover.jpg);
+}
+

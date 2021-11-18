@@ -1,0 +1,1109 @@
+.overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.active {
+  display: flex;
+}
+
+.close {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  /*height: 100vh;*/
+  z-index: 2;
+}
+
+.popup {
+  min-width: 500px;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  background: url(/img/backModalAndFindAnother.png), #202B40;
+  background-position: center -2px;
+  background-size: 150% auto;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  /*margin: 50px 0;*/
+}
+
+.popupEvent {
+  min-width: 750px;
+}
+
+.head {
+	color: #fff;
+    padding: 25px 40px 40px 40px;
+    text-align: left;
+
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+	position: relative;
+}
+@media screen and (min-width: 767px){
+	.head {
+		padding: 45px 40px 0px 40px;
+		text-align: center;
+	}
+}
+.error {
+  /*color: #fe0d36;*/
+
+}
+
+.leaveButtonUpd{
+	margin: 0 10px;
+}
+.leaveButtonUpd > div > div > div {
+	padding: 18px 40px 17px 40px !important;
+}
+.leaveButtonUpd > div, .leaveButtonUpd{
+	-webkit-clip-path: polygon(16px 0, calc(100% - 16px) 0%, 100% 50%, calc(100% - 16px) 100%, 16px 100%, 0 50%);
+    clip-path: polygon(16px 0, calc(100% - 16px) 0%, 100% 50%, calc(100% - 16px) 100%, 16px 100%, 0 50%);
+}
+.leaveButtonUpd > div > div{
+	-webkit-clip-path: polygon(15px 0, calc(100% - 15px) 0%, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0 50%) !important;
+    clip-path: polygon(15px 0, calc(100% - 15px) 0%, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0 50%) !important;
+}
+
+.success {
+
+  color: #1fde39;
+}
+
+.headSub {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.body {
+  padding: 30px;
+
+  max-height: 75vh;
+  overflow-y: auto;
+}
+.bodyNoBack{
+  background-color: transparent;
+  padding: 35px 60px;
+  border-radius: 0 0 6px 6px;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+/* styling content of Modal*/
+
+.blockCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.desc {
+  text-align: center;
+  font-size: 14px;
+  color: #ADC2CC;
+  margin: 25px 0;
+}
+
+.descErr {
+  color: #fe0d36;
+}
+
+.descSub {
+  text-align: center;
+  font-size: 14px;
+  color: #7C8AA5;
+  line-height: 24px;
+  margin-top: 25px;
+}
+.flexity{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+/* CREATE EVENT MODAL*/
+.dropdownGroup {
+  padding: 0;
+  display: inline-block;
+}
+/*
+.dropdownGroup:first-child{
+	padding-left: 0;
+}
+.dropdownGroup:last-child{
+	padding-right: 0;
+}
+*/
+.selectsRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdownTitle {
+  margin-bottom: 10px;
+  color: #94B4C4;
+}
+
+.dota {
+  height: 16px;
+}
+.dotaMore {
+  height: 22px;
+}
+.selfPic{
+	height: 30px;
+}
+span .selfPic, span .dotaMore{
+	height: 16px;
+}
+.rateForm {
+  min-width: 195px;
+}
+.rateForm span {
+  margin: 0 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.rateFormContent {
+  margin-bottom: 25px;
+}
+
+.side {
+  display: flex;
+  align-items: center;
+}
+
+.sideButton {
+  height: 40px;
+  width: 80px;
+  background-color: #0c0c17;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: 0.3s;
+  transition-property: background-color, color;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.sideActive {
+  border: 0.5px solid #fff;
+  background-color: #1c1c2d;
+  color: #fff;
+  cursor: unset;
+}
+.sideText {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.password {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.passwordInput {
+  width: 180px;
+  height: 40px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #151a26;
+  border: 1px solid rgba(99, 115, 149, 0.35);
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-top-left-radius: none;
+  border-bottom-left-radius: none;
+  box-shadow: none;
+}
+.passwordInput span {
+  padding: 0 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+.password .passwordInput input {
+  height: 100%;
+  flex: 1;
+  background-color: #000;
+  padding: 0 10px;
+  border-top-left-radius: none;
+  border-bottom-left-radius: none;
+  box-shadow: none;
+}
+.password .passwordInput input::placeholder {
+  font-size: 14px;
+}
+.passwordToggle {
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+  border: 1px solid #1fde39;
+  color: #1fde39;
+  background-color: #1c1c2d;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition-property: color, border-color;
+  transition-delay: 0.2s;
+  align-items: center;
+  padding: 1px 6px;
+}
+.passwordToggleActive {
+  color: #fe0d36;
+  border-color: #fe0d36;
+}
+
+/* END OF CREATE EVENT MODAL*/
+/* cancel modal */
+
+.gameStart {
+  text-align: center;
+  margin: 10px 0 40px;
+}
+/* end of cancel modal */
+
+.rejectBlock {
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* AnswerAccept */
+.opponent {
+  margin: 10px 0 35px;
+}
+
+.gray {
+  color: #7CA59E;
+}
+
+.opponentContent {
+  background-color: #121220;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+    background: #12292E;
+    border: 1px solid rgba(124, 165, 158, 0.5);
+    box-sizing: border-box;
+    box-shadow: inset 4px 4px 4px rgba(2, 39, 22, 0.8);
+}
+
+/* end of AnswerAccept */
+/* Accept modal */
+.inputTitle {
+  color: #7CA59E;
+  margin-bottom: 10px;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+}
+
+.inputSub {
+  padding: 10px;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 20px;
+  margin: 30px 0;
+  color: #7CA59E;
+  background: #12292E;
+  border: 1px solid rgba(124, 165, 158, 0.5);
+  box-shadow: inset 4px 4px 4px rgba(2, 39, 22, 0.8);
+  border-radius: 3px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+
+/* end Accept modal */
+/*opponents found modal*/
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.infoTitle {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+}
+
+.sum {
+  font-size: 16px;
+  color: #ffffff;
+  position: relative;
+}
+
+.sumCurrency {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 10px;
+}
+.btn {
+  margin-left: 20px;
+}
+/*end of opponents */
+
+/* participate 5 vs 5 modal */
+.participatePassword {
+  flex-direction: column;
+  margin: 0 0 20px 0;
+  background: #19202E;
+    border: 1px solid rgba(99, 115, 149, 0.35);
+    box-shadow: inset 4px 4px 4px rgba(6, 22, 15, 0.4);
+    border-radius: 5px;
+	color: #94B4C4;
+}
+.participatePasswordInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+  height: 32px;
+  color: #ffffff;
+  background: #151a26;
+  border: 1px solid rgba(99, 115, 149, 0.35);
+  box-shadow: inset 4px 4px 4px rgba(6, 22, 15, 0.4);
+  border-radius: 5px;
+}
+.participatePasswordInput span {
+  display: flex;
+  opacity: 0.6;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0 15px;
+  height: 100%;
+  background-color: #898990;
+  border-radius: 5px;
+}
+
+.participatePassword .participatePasswordInput input {
+  text-align: center;
+  height: 100%;
+  flex: 1;
+  padding: 0 10px;
+  background: #151a26;
+  border-radius: 5px;
+  box-shadow: inset 4px 4px 4px rgba(6, 22, 15, 0.4);
+  color: #ADCCC7;
+  font-weight: 500;
+}
+.participateRate {
+  margin-top: 15px !important;
+  margin-bottom: 30px !important;
+}
+.participateLockIcon {
+  color: rgba(255, 255, 255, 0.3);
+  margin-left: 5px;
+}
+
+/*leave event*/
+
+.leaveButton {
+  margin-right: 20px;
+}
+
+/*event name*/
+.eventname {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 50px;
+    margin: 30px 0;
+    color: rgba(255, 255, 255, 0.3);
+	background: #19202E;
+    border: 1px solid rgba(99, 115, 149, 0.35);
+    border-radius: 5px;
+}
+.eventname input {
+	width: 100%;
+	background: #151a26;
+    border: 1px solid rgba(99, 115, 149, 0.35);
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: inset 4px 4px 4px rgba(6, 22, 15, 0.4);
+}
+.eventnameTitle {
+	font-size: 14px;
+	color: #94B4C4;
+}
+.unders{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.unders:hover{
+	text-decoration: none;
+}
+.closeIcon {
+	position: absolute;
+    top: 5px;
+    right: 20px;
+	cursor: pointer;
+}
+.createModalOnDesktop{
+	display: block;
+}
+.createModalOnMobile{
+	display: none;
+	/*background: linear-gradient(213.01deg, #697158 0.84%, #22241E 97.66%)*/
+	background-image: url(/img/bg_mobile.png);
+    background-size: 100% auto;
+    /*background-color: #09090E;*/
+    background-color: #191e29;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mobilePasswordSwitcher {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.mobilePasswordSwitcher input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.sliderPassword {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1A1A27;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderPassword:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderPassword {
+  background: linear-gradient(289.34deg, #46AC56 25.23%, #38B179 76.69%);
+}
+
+input:focus + .sliderPassword {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .sliderPassword:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.sliderPassword.sliderRoundPassword {
+  border-radius: 34px;
+}
+
+.sliderPassword.sliderRoundPassword:before {
+  border-radius: 50%;
+}
+.sponsorSwitcherMa{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px auto 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.centrilizeSucT{
+	text-align: center;
+}
+.steamConnectedBlock{
+	background: rgba(25, 32, 46, 0.4);
+    border-radius: 5px;
+	text-align: center;
+}
+.steamLogo{
+	padding: 33px 0 22px 0;
+}
+.steamTitles{
+	font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 7px;
+}
+.steamHasAccount{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+}
+.steamHasAccount span {
+	background: -webkit-linear-gradient(306.98deg, #46AC56 25.23%, #38B179 76.69%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-left: 6px;
+}
+.steamHasNoAccount span{
+	color: #7CA59E;
+}
+.steamConnectedBlock .blockCenter{
+	padding: 23px 0 24px 0;
+}
+.buttonForCon > div > div > div > div > div{
+	padding: 10px 35px 10px 35px;
+}
+.buttonForDiscon{
+	
+}
+
+
+
+
+.selectsRow .inputGroup input{
+	background: #12292E;
+    border: 1px solid rgba(124, 165, 158, 0.5);
+    box-shadow: inset 4px 4px 4px rgba(2, 39, 22, 0.8);
+    border-radius: 3px;
+	color: #ADCCC7;
+}
+.selectsRow .inputGroup .inputSub{
+	color: #ADCCC7;
+    font-weight: 400;
+}
+
+
+
+.opponentCentered{
+	justify-content: center;
+}
+@media screen and (min-width: 1000px){
+	.sideActive{
+		background: #19202E;
+		border: 1px solid rgba(99, 115, 149, 0.35);
+		box-sizing: border-box;
+		box-shadow: inset 4px 4px 4px rgba(6, 22, 15, 0.4);
+		border-radius: 5px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.popup {
+		min-width: unset !important;
+		width: 100%;
+		background: #1c1c2d;
+	}
+	.group {
+		height: 100vh;
+		width: 100%;
+	}
+	.mobilePopup {
+		width: 90%;
+		border-radius: 10px;
+	}
+	.mobileGroupNew{
+		align-items: center;
+		height: auto;
+		width: 100%;
+	}
+	.mobileGroupNew .descSub {
+		font-size: 14px;
+		line-height: 130%;
+		text-align: center;
+		color: #727C95;
+		opacity: 0.9;
+	}
+	.mobileGroupNew .head {
+		font-size: 28px;
+		line-height: 110%
+	}
+	.fullBorder {
+		border-radius: 10px;
+	    position: relative;
+	}
+	.mobileSteamWindow .head{
+		font-size: 25px;
+		padding-top: 30px;
+	}
+	.mobileSteamWindow .blockCenter > div{
+		font-size: 12px;
+	}
+	.opponentFoundMobile .selectsRow > div {
+		justify-content: center;
+	}
+	.selectsRow {
+		display: block;
+		text-align: center;
+	}
+	.dropdownGroup{
+		padding: 0 0 20px 0;
+		display: block;
+	}
+	.body{
+		padding: 30px 10px;
+		max-height: unset;
+	}
+	.head{
+		padding: 20px;
+		position: relative;
+	}
+	.eventname{
+		padding: 0;
+		background: none;
+		display: block;
+	}
+	.eventnameFlex{
+		display: flex;
+	}
+	.eventnameTitle {
+		margin-bottom: 4px;
+		color: #ADCCC7;
+		text-align: left;
+		
+	}
+	.noflex{
+		display: block;
+		margin-top: 0;
+		margin-bottom: 50px;
+	}
+	.eventname input {
+		width: 100%;
+		font-size: 16px;
+		padding: 17px 24px;
+		height: auto;
+		border-radius: 10px;
+	}
+	.closeIcon {
+		display: block;
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		right: 14px;
+		top: 0;
+		cursor: pointer;
+	}
+	.topfiftenn{
+		top: 15px;
+	}
+	.onlyBody{
+		height: calc(100vh - 101px);
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.createModalOnDesktop{
+		display: none;
+	}
+	.createModalOnMobile{
+		display: block;
+	}
+	.createModalOnMobile .head, .createModalOnMobile .body {
+		background: transparent;
+	}
+	.createModalOnMobile .body {
+		padding-top: 0;
+	}
+	.createModalOnMobile .rateForm{
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	.createModalOnMobile .rateForm span{
+		font-size: 18px;
+		color: #ADCCC7;
+		
+	}
+	.createModalOnMobile .rateForm span.goba {
+		position: absolute;
+		right: 0;
+		font-size: 14px;
+		color: #ADCCC7;
+		
+	}
+	.rateFormContent {
+	    margin-bottom: 24px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: 100%;
+	}
+	.createModalOnMobile .head{
+		text-align: left;
+		font-weight: 600;
+		font-size: 34px;
+		line-height: 110%;
+	}
+	.createModalOnMobile .dropdownTitle {
+		margin-bottom: 4px;
+		color: #ADCCC7;
+		text-align: left;
+		
+	}
+	.dropdownGroupSerega{
+		margin-bottom: 24px;
+	}
+	.dota {
+	  height: 22px;
+	}
+	.side, .side div {
+		width: 100%;
+	}
+	.sideButton{
+		border: none;
+		background: rgba(26, 26, 39, 0.4);
+		font-size: 16px;
+		padding: 17px 24px;
+		height: auto;
+		border-radius: 10px;
+		color: #ADCCC7;
+	}
+	.sideActive {
+		border: none;
+		background: #3fae66;
+		color: #fff;
+		font-size: 16px;
+		padding: 17px 24px;
+		height: auto;
+		border-radius: 10px;
+	}
+	.privOrPubCont{
+		margin-top: 24px;
+	}
+	.passwordToggle{
+		width: unset;
+		height: unset;
+		display: flex;
+		border: none;
+		border-radius: 0;
+		background: none;
+	}
+	.password{
+		width: 100%;
+	}
+	.typeOfLobby{
+		
+		font-size: 16px;
+		color: #ADCCC7;
+		margin-left: 12px;
+		width: 48px;
+	}
+	.password .passwordInput{
+		width: auto;
+		height: auto;
+		background-color: transparent;
+		border: 0;
+		margin: 0;
+		margin-left: 40px;
+	}
+	.password .passwordInput input {
+		border: none;
+		background: linear-gradient(310.45deg, #46AC56 25.23%, #38B179 76.69%);
+		color: #fff;
+		font-size: 16px;
+		padding: 17px 15px;
+		height: auto;
+		border-radius: 10px;
+		width: 100%;
+	}
+	.password .passwordInput input:disabled {
+		border: none;
+		background: rgba(26, 26, 39, 0.4);
+		font-size: 16px;
+		padding: 17px 15px;
+		height: auto;
+		border-radius: 10px;
+		color: #ADCCC7;
+		width: 100%;
+	}
+	.isSponsorshipBlock{
+		margin-top: 34px;
+	}
+	.isSponsorshipBlockBigText{
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 110%;
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.dibitedText{
+		
+		font-size: 16px;
+		line-height: 130%;
+		text-align: center;
+		color: #FFFFFF;
+		width: 80%;
+		margin: 40px auto 11px auto;
+	}
+	.ifEventCanceledWholeText{
+		
+		font-size: 14px;
+		line-height: 130%;
+		text-align: center;
+		color: #ADCCC7;
+	}
+	.blockOfEsse{
+		padding: 20px 40px 20px;
+		margin: 37px -10px -30px -10px;
+		background: rgba(26, 26, 39, 0.8);
+	}
+	.itogy{
+		
+	}
+	.maxWinText{
+		
+		font-size: 16px;
+		line-height: 130%;
+		text-align: center;
+		color: #ADCCC7;
+	}
+	.currencyWinner {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 130%;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	.currencyWinner span{
+		
+		margin-left: 10px;
+	}
+	.forTakeCom{
+		
+		font-size: 12px;
+		line-height: 130%;
+		text-align: center;
+		color: #ADCCC7;
+		opacity: 0.5;
+	}
+	.itogysubmitButton{
+		padding-top: 25px;
+	}
+	
+	.someStyle{
+		background: #1A1A27;
+		opacity: 0.4;
+		border-radius: 10px;
+	}
+	
+	.otherBigModal{
+		
+	}
+	.otherBigModal .head{
+		text-align: center;
+		padding-top: 80px;
+	}
+	.otherBigModal .rate{
+		background-color: transparent;
+		border-radius: 0;
+		padding: 0;
+	}
+	.otherBigModal .participatePassword .participatePasswordInput{
+		margin: 10px 0 0 0;
+		width: 100%;
+		height: auto;
+		border-radius: 0;
+		border: none;
+		background-color: transparent;
+	}
+	.otherBigModal .participatePassword .participatePasswordInput input{
+		width: 100%;
+		background: #1A1A27;
+		border: none;
+		padding: 17px 24px;
+		border-radius: 10px;
+		font-size: 18px;
+		text-align: left;
+	}
+	.otherBigModal .descSub {
+		margin-top: 5px;
+	}
+	.otherBigModal .inputTitle{
+		color: #ADCCC7;
+		margin-bottom: 4px;
+		text-align: left;
+	}
+	.otherBigModal .inputSub {
+		padding: 0;
+		font-size: 18px;
+		color: #ADCCC7;
+		margin: 0 15px;
+	}
+	.otherBigModal .inputGroup input {
+		width: 100%;
+		background: #1A1A27;
+		border: none;
+		padding: 17px 24px;
+		border-radius: 10px;
+		font-size: 18px;
+		text-align: left;
+	}
+	.otherBigModal .fixSelectsRowMobile {
+		
+	}
+	.participateRate {
+	  margin-top: 15px !important;
+	  margin-bottom: 0 !important;
+	}
+	.opponent {
+		text-align: center;
+		margin-top: 0;
+	}
+	.opponentContent {
+		display: block;
+		margin-top: 25px;
+		padding: 20px;
+	}
+	.opponentContent > div {
+		display: flex;
+		flex-direction: column;
+	}
+	.opponentContent > div > img {
+		margin: 0 0 10px 0;
+	}
+	.opponentContent > div > a {
+		margin: 10px 0 0 0;
+	}
+	.opponentContent > div > a img{
+		margin: 0;
+	}
+	.moveTextBlock{
+		
+	}
+	.unmoveTextBlock{
+		
+	}
+	.otherBigModal .descSub.unmoveTextBlock{
+		margin: 40px 0 70px 0;
+	}
+	.otherBigModal .descSub.moveTextBlock{
+		
+	}
+	.otherBigModal .participatePassword {
+		margin-bottom: 15px;
+	}
+	
+	.otherBigModal .head .closeIcon img{
+		height: 28px;
+	}
+	.otherBigModal .head .closeIcon{
+		width: 100%;
+		top: 21px;
+		left: 0;
+		right: 0;
+		height: 28px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.mt0 {
+	  max-width: 85%;
+	  margin: 0 auto 25px auto;
+	  font-size: 18px;
+	  line-height: 130%;
+	  opacity: 0.9;
+	}
+	.dynamicStyle{
+		
+	}
+	
+}
+
+@media (min-height: 568px) and (max-height: 568px){
+	.otherBigModal .descSub.unmoveTextBlock{
+		margin: -1px 0;
+	}
+}
+
+@media (min-width: 375px) and (max-width:767px) {
+	.group {
+		
+	}
+}
+
+.justForm{
+	display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.justForm div {
+    flex: 80%;
+}
+.justForm .eventnameTitle{
+	flex: 20%;
+}
+.justForm input{
+	width: 100%;
+	border: 1px solid rgba(99, 115, 149, 0.35);
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: inset 4px 4px 4px rgb(6 22 15 / 40%);
+}
+.feeOrNotFee{
+	font-size: 13px;
+    color: #7CA59E;
+	text-align: center;
+	margin: 25px 0;
+}
+.feeOrNotFee p {
+    line-height: 1;
+    margin-bottom: -8px;
+}
+.feeOrNotFee span{
+	color: #3eaf6b;
+    font-weight: 400;
+}
+

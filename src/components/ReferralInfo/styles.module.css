@@ -1,0 +1,129 @@
+.referralSystemAll{
+	
+}
+.threeBlocks{
+	display: flex;
+	justify-content: space-between;
+}
+.referralStatics{
+	position: relative;
+	background: #0C181F;
+	border: 1px solid rgba(132, 145, 170, 0.1);
+	box-sizing: border-box;
+	border-radius: 5px;
+	flex-grow: 1;
+	display: flex;
+    align-items: center;
+	margin: 0 10px;
+}
+.referralStatics:first-child{
+	margin-left: 0;
+}
+.referralStatics:last-child{
+	margin-right: 0;
+}
+.referralStaticsContent{
+	padding: 20px 0 21px 24px;
+	text-align: left;
+}
+.numberStatics{
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 130%;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.numberStatics span{
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 130%;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.textUnderNumber{
+	font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #7CA59E;
+}
+.iconForModal{
+	position: absolute;
+    top: 14px;
+    right: 12px;
+	cursor: pointer;
+}
+.copyLinkblock{
+	padding-top: 20px;
+}
+.linkContainer{
+	display: flex;
+    align-items: center;
+	background: #12292E;
+    border: 1px solid rgba(124, 165, 158, 0.35);
+    box-sizing: border-box;
+    box-shadow: inset 4px 4px 4px rgba(6, 22, 15, 0.4);
+    border-radius: 5px;
+}
+.preLinkText{
+	font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #7CA59E;
+	padding: 18px 0;
+	border-right: 1px solid rgba(124, 165, 158, 0.15);
+	flex-grow: 1;
+}
+.link{
+	font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+	padding: 18px 24px;
+}
+.button{
+	flex-grow: 1;
+    text-align: right;
+	padding-right: 20px;
+}
+.instroText{
+	font-size: 14px;
+    line-height: 130%;
+    color: #ADC2CC;
+    text-align: left;
+    margin-left: 25px;
+	padding-top: 15px;
+}
+.linkContainer .button > div > div > div > div > div{
+	padding: 10px 25px;
+}
+@media screen and (max-width: 767px){
+	.threeBlocks {
+		display: block;
+	}
+	.referralStatics{
+		margin: 0 0 15px 0;
+	}
+	.preLinkText {
+		border-right: none;
+		text-align: left;
+		font-weight: 500;
+		font-size: 28px;
+		line-height: 120%;
+		color: #FFFFFF;
+	}
+	.button {
+		text-align: center;
+		padding: 15px 0 0 0;
+	}
+	.instroText{
+		text-align: center;
+		margin-left: 0;
+	}
+	.linkContainer{
+		justify-content: center;
+	}
+	.link {
+		font-size: 12px;
+		padding: 15px 5px;
+	}
+}

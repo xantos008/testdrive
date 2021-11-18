@@ -1,0 +1,269 @@
+.overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+.wombat{
+	position: relative;
+	width: 576px;
+	background: linear-gradient(89.63deg, #384C50 0.34%, #27383C 101.6%);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+.wombat .body {
+	border-radius: 10px;
+	padding: 40px 23px 46px 23px;
+	background: url(/img/backModalAndFindAnother.png), #202B40;
+	max-height: 75vh;
+	overflow-y: auto;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.pandasBotForBody .body {
+	padding: 55px 23px 15px 23px;
+}
+
+.closeIcon{
+	position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 24px;
+    top: 23px;
+    cursor: pointer;
+}
+
+.pandasBotForBody .body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.pandasBotForBody .body {
+  -ms-overflow-style: none;
+}
+
+
+
+
+
+
+.monthInfoTitle{
+	font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.monthInfoSubTitle{
+	font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #ADCCC7;
+    margin-top: 12px;
+}
+.monthInfoCurrentInfo{
+	text-align: center;
+    margin-top: 34px;
+}
+.monthInfoCurrentInfo table{
+	margin-left: auto;
+    margin-right: auto;
+}
+.monthInfoTableBrush{
+    margin-bottom: 9px;
+}
+.columnOne{
+	font-size: 16px;
+    line-height: 130%;
+    color: #7CA59E;
+	display: table-cell;
+    text-align: left;
+}
+.columnTwo{
+	font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+	display: table-cell;
+    text-align: right;
+    position: relative;
+	padding-left: 20px;
+}
+.movePercent{
+	position: relative;
+	left: 5px;
+}
+.progressLine{
+	width: 90%;
+    margin: 20px auto 0 auto;
+}
+.progressBar{
+	background: #09090E;
+    border-radius: 5px;
+    height: 3px;
+
+}
+.progress{
+	height: 3px;
+    background: linear-gradient(357.61deg, #46AC56 25.23%, #38B179 76.69%);
+    box-shadow: 0px 0px 7px rgba(56, 177, 121, 0.7);
+    border-radius: 5px;
+}
+.roundedMessage{
+	display: flex;
+    border: 1px solid rgba(124, 165, 158, 0.3);
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 15px 18px 12px 18px;
+	margin-top: 20px;
+}
+.iconOfMessage{
+	position: relative;
+    top: 1px;
+    margin-right: 15px;
+}
+.iconOfMessage img{
+	
+}
+.textOfMessage{
+	font-size: 14px;
+    line-height: 130%;
+    color: #ADCCC7;
+}
+.tableOfWonders{
+	margin: 47px -23px 0 -23px;
+}
+.tablesHead{
+	background: rgba(9, 9, 14, 0.15);
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: 12px 0;
+}
+.celFirst, .celSecond, .celThird, .celFourth{
+	font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+	flex-grow: 1;
+}
+.tablesLines{
+	
+}
+.tablesLines .celFirst, .tablesLines .celSecond{
+	font-weight: 300;
+	width: 50%;
+}
+.tableRow{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: 12px 0;
+}
+.tableRow:nth-child(even){
+	background: rgb(148, 180, 196, 0.1);
+}
+.tableRow.currentLevelio{
+	background: rgba(56, 177, 121, 0.2);
+}
+.tableRow.currentLevelio .celFirst, .tableRow.currentLevelio .celSecond, .tableRow.currentLevelio .celThird, .tableRow.currentLevelio .celFourth{
+	font-size: 16px;
+	font-weight: 300;
+    line-height: 140%;
+    color: #6AB74F;
+}
+.referralLevelTitle{
+    padding: 0;
+    margin: 0;
+}
+.referralLevelSubTitle{
+	color: #7CA59E;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+	line-height: 1.3;
+    padding-top: 5px;
+}
+.referralsTable .referralLevelTitle{
+	line-height: 1.2;
+}
+.referralsTable .tablesHead{
+	padding: 12px 30px;
+}
+.referralsTable .tableRow{
+	padding: 12px 30px;
+}
+.referralsTable .celFirst{
+	flex-grow: unset;
+    width: 45%;
+	text-align: left;
+}
+.referralsTable .celSecond{
+	flex-grow: unset;
+    width: 15%;
+}
+.referralsTable .celThird{
+	flex-grow: unset;
+    width: 25%;
+}
+.referralsTable .celFourth{
+	flex-grow: unset;
+    width: 15%;
+}
+
+
+
+@media screen and (max-width: 767px){
+	.wombat{
+		width: unset;
+	}
+	.head {
+		position: relative;
+	}
+	.closeIcon {
+		top: 0px;
+		right: 14px;
+	}
+	.topfiftenn {
+		top: 15px;
+	}
+	.originalCloseIcon{
+		right: 24px;
+		top: 23px;
+	}
+	.wombat {
+		box-shadow: none;
+	}
+	.onlyBody{
+		height: calc(100vh - 101px);
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.newStyleFirst{
+		box-shadow: none;
+	}
+	.columnOne{
+		font-size: 15px;
+	}
+	.referralsTable .celFirst{
+		display: none;
+	}
+	.referralsTable .celSecond, .referralsTable .celThird, .referralsTable .celFourth {
+		flex-grow: 1;
+		width: 30%;
+	}
+}
+@media (min-width: 568px) and (max-width: 767px){
+	.referralsTable .celFirst{
+		display: inherit;
+	}
+}

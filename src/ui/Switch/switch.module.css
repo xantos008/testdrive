@@ -1,0 +1,166 @@
+.checkBox {
+  transform: rotate(90deg);
+}
+
+.switcher, .switcherLNX, .switcherTLOS {
+  position: relative;
+  color: #c2c2c2;
+}
+
+.switcher::before {
+  content: 'USD';
+  position: absolute;
+  left: -20px;
+  bottom: 15px;
+  font-size: 12px;
+}
+
+.switcherLNX::before {
+  content: 'USD';
+  position: absolute;
+  left: -23px;
+  bottom: 15px;
+  font-size: 12px;
+}
+
+.switcherTLOS::before {
+  content: 'USD';
+  position: absolute;
+  left: -23px;
+  bottom: 15px;
+  font-size: 12px;
+}
+
+.crSwitcher {
+  display: inline-block;
+}
+
+.switcher::after {
+  content: 'EOS';
+  position: absolute;
+  left: 63px;
+  bottom: 15px;
+  font-size: 12px;
+}
+.switcherLNX::after {
+  content: 'LNX';
+  position: absolute;
+  left: 23px;
+  bottom: 15px;
+  font-size: 12px;
+}
+.switcherTLOS::after {
+  content: 'TLOS';
+  position: absolute;
+  left: 23px;
+  bottom: 15px;
+  font-size: 12px;
+}
+
+.switcher, .switcherLNX, .switcherTLOS,
+.switcher .checkBox, .switcherLNX .checkBox, .switcherTLOS .checkBox,
+.switcher .checkBox label, .switcherLNX .checkBox label, .switcherTLOS .checkBox label {
+  float: left;
+  position: relative;
+}
+
+.switcher, .switcherLNX,, .switcherTLOS,
+.switcher .checkBox label, .switcherLNX .checkBox label, .switcherTLOS .checkBox label {
+  width: 100%;
+}
+
+.switcher .checkBox{
+  width: 66px;
+  padding: 0 20px;
+  margin: 15px 0;
+}
+
+.switcherLNX .checkBox {
+  width: 66px;
+  padding: 0 10px;
+  margin: 15px -20px;
+}
+
+.switcherTLOS .checkBox {
+	width: 66px;
+    padding: 0 10px;
+    margin: 15px -20px;
+}
+
+.switcher .checkBox input, .switcherLNX .checkBox input, .switcherTLOS .checkBox input {
+  display: none;
+}
+
+.switcher .checkBox label, .switcherLNX .checkBox label, .switcherTLOS .checkBox label, 
+.switcher .checkBox label .circle, .switcherLNX .checkBox label .circle, .switcherTLOS .checkBox label .circle {
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.switcher .checkBox label, .switcherLNX .checkBox label, .switcherTLOS .checkBox label {
+  height: 46px;
+  width: 26px;
+  background: #07070e;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 1px solid #07070e;
+  /*box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);*/
+}
+
+.switcher .checkBox:nth-child(1).active label, .switcherLNX .checkBox:nth-child(1).active label, .switcherTLOS .checkBox:nth-child(1).active label {
+  /*background: #3F51B5;*/
+}
+
+.switcher .checkBox label .circle, .switcherLNX .checkBox label .circle, .switcherTLOS .checkBox label .circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+}
+
+.circleGreen {
+  background-color: #1fde39 !important;
+}
+
+.switcher .checkBox.active label, .switcherLNX .checkBox.active label, .switcherTLOS .checkBox.active label {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.switcher .checkBox.active label .circle, .switcherLNX .checkBox.active label .circle, .switcherTLOS .checkBox.active label .circle {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+}
+
+.switcher *,
+.switcher *:after,
+.switcher *::before,
+.switcherLNX *,
+.switcherLNX *:after,
+.switcherLNX *::before,
+.switcherTLOS *,
+.switcherTLOS *:after,
+.switcherTLOS *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+
+.switcherRow::after,
+.switcherRow::before {
+  bottom: 30px;
+}

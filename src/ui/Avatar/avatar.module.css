@@ -1,0 +1,92 @@
+.ava {
+	display: inline-flex;
+	width: 152px;
+    height: 131px;
+	background: url(/img/profileAvatarBorder.svg);
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+	filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.5));
+}
+
+.waitingPicture{
+	display: none;
+	position: absolute;
+    bottom: -12px;
+    right: 24px;
+}
+.readyPicture{
+	display: none;
+	position: absolute;
+    bottom: -17px;
+    right: 16px;
+}
+
+.ava.avaWaiting .waitingPicture{
+	display: block;
+	visibility: visible !important;
+}
+.ava.avaWaiting .readyPicture{
+	display: none;
+	visibility: visible !important;
+}
+
+.ava.avaReady .waitingPicture{
+	display: none;
+	visibility: visible !important;
+}
+.ava.avaReady .readyPicture{
+	display: block;
+	visibility: visible !important;
+}
+
+.preAvaBlock{
+	display: flex;
+	width: 130px;
+	height: 112.58px;
+	margin: 8.5px 8px 8.5px 11.5px;
+    align-items: center;
+    justify-content: center;
+	-webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+	clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%)
+}
+.preAvaBlock img {
+	width: 130px;
+    height: 130px;
+}
+.joinText{
+	display: none;
+}
+.joinText img {
+    visibility: visible !important;
+    width: 34px;
+    height: 34px;
+    animation: rotation 8s infinite linear;
+}
+.joinText span {
+	display: none;
+}
+.preAvaBlock:hover .joinText img{
+	display: none;
+}
+
+.preAvaBlock:hover .joinText span{
+	display: block;
+}
+
+
+@media screen and (max-width: 999px){
+	.ava.Biga{
+		margin: 0 auto 20px auto;
+	}
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}

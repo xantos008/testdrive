@@ -1,0 +1,68 @@
+.empty {
+	text-align: center;
+	margin: 60px auto;
+	max-width: 592px;
+	background: url(/img/backModalAndFindAnother.png), #202B40;
+    background-position: top center;
+    background-repeat: no-repeat;
+	background-size: 150% auto;
+    border-radius: 5px;
+	width: 90%;
+	box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+	font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 47px 0 21px;
+	width: 90%;
+}
+
+.titleSub {
+	margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #ADC2CC;
+    max-width: 362px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+	width: 90%;
+}
+
+.linkContainer{
+	background: #19202E;
+    border: 1px solid rgba(99, 115, 149, 0.35);
+    box-shadow: inset 4px 4px 4px rgba(6, 22, 15, 0.4);
+    border-radius: 5px;
+    max-width: 464px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 20px 24px;
+    cursor: pointer;
+	width: 90%;
+}
+.subTextLink{
+	font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    color: #7C8AA5;
+    padding: 9px 0 32px 0;
+}
+.copyButton{
+	height: 85px;
+}
+
+@media screen and (max-width: 767px){
+	.empty {
+		background-size: cover;
+		margin: 0px auto 60px auto;
+	}
+}
+

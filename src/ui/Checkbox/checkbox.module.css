@@ -1,0 +1,52 @@
+.input:checked,
+.input:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.input:checked + label,
+.input:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  line-height: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #7d99a9;
+}
+
+.input:checked + label:before,
+.input:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #0c0c17;
+  background-color: #0c0c17;
+  border-radius: 100%;
+}
+
+.input:checked + label:after,
+.input:not(:checked) + label:after {
+  content: '';
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  left: 10px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #7d99a9;
+}
+.input:not(:checked) + label:after {
+  opacity: 0;
+}
+
+.input:checked + label:after {
+  opacity: 1;
+}

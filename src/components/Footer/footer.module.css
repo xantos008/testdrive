@@ -1,0 +1,284 @@
+.final {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 12px;
+  color: #707070;
+  background-color: #000000;
+}
+
+.logo {
+  height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.title {
+  padding-bottom: 10px;
+}
+
+.footer {
+  padding: 40px;
+  color: #707070;
+  background-color: #09090E;
+}
+
+.footerOfften {
+  padding: 40px;
+  color: #707070;
+  background-color: #09090E;
+}
+
+.footerContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.soc {
+  padding: 20px 0;
+}
+
+.socItem {
+  margin-right: 10px;
+}
+
+.socItem:last-child {
+  margin-right: 0;
+}
+
+.soc img {
+  opacity: 0.3;
+  height: 18px;
+}
+
+.soc img:hover {
+  opacity: 1;
+}
+
+.item {
+  margin-right: 50px;
+}
+footer > .item:first-child {
+  margin-right: 0;
+}
+.item:last-child {
+  margin-right: 0;
+}
+.divider {
+  width: 1px;
+  height: 85px;
+  margin-right: 10px;
+  background-color: #424250;
+  opacity: 0.8;
+}
+.navItem {
+  display: inline-block;
+  vertical-align: middle;
+  color: #707070;
+  padding: 0 0 3px;
+  transition: 0.5s;
+  font-size: 14px;
+  margin-right: 50px;
+}
+.navItem:last-child{
+  margin-right: 0px;
+}
+
+.navItem:hover {
+  color: #ffffff;
+}
+
+.lang {
+}
+
+.langItem {
+  margin-right: 7px;
+  height: 19px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.langItem:last-child {
+  margin-top: 0;
+}
+
+.langItem:hover {
+  opacity: 1;
+}
+
+.langItemActive {
+  opacity: 1;
+}
+
+.age {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ADB8CC;
+  opacity: 0.4;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 17px;
+}
+
+.lang img {
+	display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+    border-radius: 4px;
+    height: 19px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.credits {
+  font-size: 14px;
+  color: #ADB8CC;
+  opacity: 0.5;
+}
+
+.inlineItems {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.mobileStyky {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 2;
+	padding: 0;
+	background: rgba(26, 26, 39, 0.8);
+	backdrop-filter: blur(20px);
+}
+.mobileFooterContainer {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	padding: 15px 25px;
+	border-top: 1px solid rgba(124, 165, 158, 0.2);
+}
+.mobileFooterTab {
+	cursor: pointer;
+	display: block;
+    text-align: center;
+}
+.footerTabIcon {
+	
+}
+
+.mobileNavLink .footerTabIcon svg path, .footerTabIcon svg path {
+	fill: #ADCCC7;
+}
+.mobileNavLink:hover .footerTabIcon svg path, .mobileNavLinkActive .footerTabIcon svg path, .mobileFooterTab:hover .footerTabIcon svg path {
+	fill: #6AB74F;
+}
+.mobileNavLink .footerTabText, .footerTabText {
+	color: #ADCCC7;
+}
+.mobileNavLink:hover .footerTabText, .mobileNavLinkActive .footerTabText, .mobileFooterTab:hover .footerTabText {
+	color: #6AB74F;
+}
+.mobileNavLinkActive{
+	
+}
+.mobileLogout .footerTabText{
+	
+}
+.footerTabText {
+    margin-top: 5px;
+}
+.mobileLogout{
+	
+}
+.mobileNavLink{
+	
+}
+.mobileNavLinkActive{
+	
+}
+.mobileFooterPands svg {
+    position: relative;
+    left: -5px;
+}
+@media screen and (max-width: 767px){
+	.item .inlineItems, .item {
+		margin-right: 0;
+	}
+	.credits{
+		margin: 30px 17px 17px 17px;
+	}
+	.footerContainer{
+		display: block;
+		max-width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.navItem{
+		margin: 10px 0 10px 0;
+		width: 100%;
+	}
+}
+@media (min-width: 768px) and (max-width: 999px){
+	.item{
+		margin-right: 40px;
+	}
+}
+@media screen and (max-width: 999px){
+	
+	.footer {
+		padding-bottom: 120px;
+	}
+	.mobileStyky{
+		display: block;
+		padding: 0;
+	}
+	.footerOfften.mobileStyky{
+		display: none;
+	}
+}
+@media screen and (max-width: 767px){
+	.footer {
+		display: none;
+	}
+	.mobileStyky{
+		display: block;
+		padding: 0;
+	}
+	.footerOfften {
+		padding-bottom: 25px;
+		margin-bottom: -66px;
+	}
+	.ageLineLink {
+		margin-bottom: 30px;
+	}
+	.footerTabText {
+		font-size: 14px;
+	}
+	.smallFooter .footerTabText{
+		display: none;
+	}
+	.smallFooter .mobileFooterContainer{
+		justify-content: space-around;
+	}
+	.navItemNew{
+		
+	}
+	.mobileFooterContainer{
+		padding: 10px 15px 11px 15px;
+	}
+	.footerTabIcon {
+		min-width: 38px;
+	}
+}
+@media screen and (max-width: 370px) {
+	.mobileFooterContainer{
+		padding: 10px 15px 11px 15px;
+	}
+}

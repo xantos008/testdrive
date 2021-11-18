@@ -1,0 +1,39 @@
+.nickname {
+  display: flex;
+  align-items: center;
+}
+
+.nicknameAva {
+  width: 45px;
+  height: 45px;
+  border: 6px solid #1e1e2b;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.nicknameSteam {
+  margin-left: 15px;
+  opacity: 0.3;
+  cursor: pointer;
+  width: 17px;
+}
+
+.nicknameSteam:hover {
+  opacity: 1;
+}
+.nicknameBig {
+  font-size: 20px;
+}
+
+.nicknameBig .nicknameAva {
+  width: 57px;
+  height: 57px;
+  border: 6px solid #282838;
+  margin-right: 20px;
+}
+
+.nicknameBig .nicknameSteam {
+  margin-left: 15px;
+  width: 21px;
+  margin-top: 5px;
+}

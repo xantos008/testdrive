@@ -1,0 +1,31 @@
+.empty {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.titleSub {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  margin-left: 20px;
+}
+@media screen and (max-width: 767px){
+	.btn {
+	  margin: 20px;
+	}
+	.btn > div {
+		margin-top: 20px;
+	}
+	.title{
+		font-size: 24px;
+	}
+}

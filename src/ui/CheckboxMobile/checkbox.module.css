@@ -1,0 +1,68 @@
+.mobilePasswordSwitcher {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.mobilePasswordSwitcher input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.sliderPassword {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1A1A27;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderPassword:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderPassword {
+  background: linear-gradient(289.34deg, #46AC56 25.23%, #38B179 76.69%);
+}
+
+input:focus + .sliderPassword {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .sliderPassword:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.sliderPassword.sliderRoundPassword {
+  border-radius: 34px;
+}
+
+.sliderPassword.sliderRoundPassword:before {
+  border-radius: 50%;
+}
+.robit{
+	font-family: Proxima Nova Regular;
+    font-size: 16px;
+    line-height: 130%;
+    color: #ADCCC7;
+    margin-left: 12px;
+}

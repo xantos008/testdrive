@@ -1,0 +1,210 @@
+.overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+.wombat{
+	position: relative;
+	width: 576px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+    background-position: top center;
+    background-repeat: no-repeat;
+	background-size: 100% auto, contain;
+    border-radius: 5px;
+}
+.wombat .body {
+	border-radius: 10px;
+	padding: 40px 23px 46px 23px;
+	max-height: 75vh;
+	overflow-y: auto;
+}
+.pandasBotForBody .body {
+	padding: 55px 23px 46px 23px;
+}
+.wombatModalLogo {
+	padding-bottom: 28px;
+}
+.bodyMaker{
+	background: none;
+}
+.closeIcon{
+	position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 24px;
+    top: 23px;
+    cursor: pointer;
+}
+.flexity{
+	display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.leftOneBlock{
+	width: 240px;
+}
+.rightOneBlock{
+	width: 240px;
+}
+.blockTitle{
+	font-size: 18px;
+    font-family: Proxima Nova Extrabold;
+	margin-bottom: 22px;
+}
+.crypList{
+	
+}
+.blockCenter {
+	text-align: center;
+	margin-top: 35px;
+}
+.activeOnBlock{
+	margin-bottom: 16px;
+}
+.orBlock{
+	font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+	position: relative;
+}
+.orBlock::after,.orBlock::before{
+	content: "";
+	background: #B7EEC2;
+    opacity: 0.2;
+    position: absolute;
+	height:1px;
+	width: 40%;
+	top: calc(50% - 1px);
+}
+.orBlock::before{
+	left: 0;
+}
+.orBlock::after{
+	right: 0;
+}
+.offtenOnBlock{
+	margin-top: 13px;
+}
+.offtenOnBlock > div:first-child {
+    margin-bottom: 8px;
+}
+.noWallet{
+	font-size: 18px;
+	line-height: 130%;
+	text-align: center;
+	color: #B7EEC2;
+	cursor: pointer;
+	text-decoration: none;
+	font-family: Proxima Nova Light;
+}
+.noWallet:hover{
+	text-decoration: underline;
+}
+.wombatModalButton{
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: center;
+	background: #FFFFFF;
+	border-radius: 40px;
+	box-shadow: none;
+	display: block;
+	width: 250px;
+	padding: 20px 0px 18px;
+	height: 18px;
+	margin: 0 auto;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+	position: relative;
+	top: 0;
+	transition: all .3s ease-out;
+}
+.wombatModalButton:hover{
+	background: #fff;
+    top: -4px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.36);
+}
+.wombatModalButton p{
+	margin: 0;
+	padding: 0;
+	line-height: 18px;
+	/*color: linear-gradient(309.2deg, #46AC56 25.23%, #38B179 76.69%);*/
+	background: -webkit-linear-gradient(309.2deg, #46AC56 25.23%, #38B179 76.69%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.desc {
+	text-align: center;
+	font-size: 18px;
+}
+.mtAgainst {
+	
+}
+.secondDesc {
+	color: #adc2cc;
+    font-size: 14px;
+}
+.centrilizeSucT{
+	text-align: center;
+}
+
+.preLoginTitleMidal{
+	font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px 0 21px
+}
+.preLoginSubTitleMidal {
+	margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #ADC2CC;
+    max-width: 362px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media screen and (max-width: 767px){
+	.wombat{
+		width: unset;
+	}
+	.head {
+		position: relative;
+	}
+	.closeIcon {
+		top: 0px;
+		right: 14px;
+	}
+	.topfiftenn {
+		top: 15px;
+	}
+	.originalCloseIcon{
+		right: 24px;
+		top: 23px;
+	}
+	.wombat {
+		box-shadow: none;
+	}
+	.onlyBody{
+		height: calc(100vh - 101px);
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.newStyleFirst{
+		background: #1c1c2d;
+		box-shadow: none;
+	}
+}

@@ -1,0 +1,142 @@
+.logo {
+  /*height: 43px;*/
+  display: block;
+  /*margin-left: 35px;*/
+  flex-grow: 1;
+}
+
+.logo img {
+  /*height: 100%;*/
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 88px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 45px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-grow: 6;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #707070;
+  padding: 0 20px;
+  margin: 0 10px;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navItem:hover {
+  color: #ffffff;
+}
+
+.divider {
+  width: 1px;
+  height: 28px;
+  background-color: #424250;
+  opacity: 0.8;
+}
+
+.navItemActive {
+  color: #ffffff;
+}
+
+.navItemActive::before {
+  content: '';
+  display: block;
+  background-color: #1fde39;
+  height: 2px;
+  position: absolute;
+  width: calc(100% - 40px);
+  bottom: 0;
+}
+
+.profileBar {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.avaContainer {
+  width: 45px;
+  height: 45px;
+  margin-right: 25px;
+  border: 5px solid rgba(255, 248, 255, 0.05);
+  border-radius: 50%;
+}
+
+.ava {
+  width: 120px;
+  height: 120px;
+  margin: 0 70px 0 0;
+  border: 12px solid rgba(255, 248, 255, 0.05);
+  border-radius: 50%;
+}
+
+.ava img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.profileBarDesc {
+  color: #ffffff;
+  margin-left: 25px;
+  min-width: 100px;
+}
+
+.profileBarSeparate {
+  width: 42px;
+  height: 2px;
+  margin: 5px 0;
+  background-color: #444451;
+}
+
+.coinsGroup {
+  color: #616161;
+}
+
+.coinValue {
+  color: #ffffff;
+  margin-right: 5px;
+}
+.coinLabel {
+  color: #616161;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: #5a1026;
+  color: #ffffff;
+  padding: 0 45px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background-color: #aa1e45;
+}
+
+.fg1 {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 999px){
+	.header {
+		max-width: 90%;
+		padding-top: 20px;
+	}
+}

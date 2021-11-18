@@ -1,0 +1,17 @@
+.splashScreen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(/img/preloader.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #030303;
+  position: fixed;
+}
+.splashScreenText{
+	position: relative;
+    top: 80px;
+}

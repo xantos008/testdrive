@@ -1,0 +1,481 @@
+.profile {
+	text-align: center;
+}
+
+.profile .info {
+  
+}
+
+.titleSub {
+	font-size: 13px;
+    line-height: 130%;
+    text-align: center;
+    color: #ADCCC7;
+}
+
+.title {
+	display: block;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.name {
+	margin-left: 49px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.img {
+  width: 29px;
+  opacity: 0.3;
+  cursor: pointer;
+  margin: 5px 0 0 20px;
+}
+
+.img:hover {
+  opacity: 1;
+}
+
+.balance {
+  margin-bottom: 60px;
+}
+
+.balanceTitle {
+  color: #c2c2c2;
+  margin-bottom: 5px;
+}
+
+.balanceInfo {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 3px;
+}
+
+.balanceCount {
+  margin-right: 50px;
+}
+/* for Profile Event */
+.profileEvent {
+  z-index: 10;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 40%;
+  vertical-align: middle;
+}
+
+.profileEvent .info {
+	padding: 30px;
+}
+
+.profileEvent .name {
+	margin-left: 0;
+	margin-left: 0;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 120%;
+	color: #FFFFFF;
+	text-align: right;
+}
+
+.profileEvent .title {
+  margin-bottom: 0;
+}
+
+.reverse {
+	flex-direction: initial;
+}
+
+.profileEvent .info .titleSub{
+	text-align: right;
+}
+.profileEvent.reverse .info .titleSub {
+  text-align: left;
+}
+.profileEvent.reverse .name{
+	text-align: left;
+}
+
+
+.reverse .title {
+  flex-direction: row-reverse;
+}
+
+.reverse .img {
+  margin: 5px 20px 0 0;
+}
+
+.reverse .labelGroup {
+  text-align: right;
+}
+
+.profileEvent .labels{
+	display: flex;
+    padding-top: 5px;
+    float: right;
+}
+.profileEvent.reverse .labels{
+	float: left;
+}
+.profileEvent .ownerLable{
+	font-size: 11px;
+    line-height: 14px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: url(/img/userOwner.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 75px;
+    height: 18px;
+    display: inline-flex;
+    justify-content: center;
+    font-weight: bold;
+    padding: 4px 8px 4px 8px;
+}
+.profileEvent .cachLabel{
+	
+}
+.profileEvent .labelWinner{
+	font-size: 11px;
+    line-height: 14px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: url(/img/userWinner.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 75px;
+    height: 18px;
+    display: inline-flex;
+    justify-content: center;
+    font-weight: bold;
+    padding: 4px 8px 4px 8px;
+}
+.profileEvent .labelLooser{
+	font-size: 11px;
+    line-height: 14px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: url(/img/userLooser.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 75px;
+    height: 18px;
+    display: inline-flex;
+    justify-content: center;
+    font-weight: bold;
+    padding: 4px 8px 4px 8px;
+}
+.profileEvent .info .paddingCheck{
+	margin-right: 10px;
+}
+.profileEvent .info .paddingCheck:last-child{
+	margin-right: 0;
+}
+
+
+.labelGroup {
+  display: none;
+  margin-top: 10px;
+}
+
+.label {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 5px 8px;
+}
+
+.labelGreen {
+  color: #1fde39;
+  background-color: rgba(31, 222, 57, 0.1);
+}
+
+.labelRed {
+  color: #fe0d36;
+  background-color: rgba(254, 13, 54, 0.15);
+}
+
+.totals {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-top: 74px;
+	background: linear-gradient(341.37deg, #46AC56 25.23%, #38B179 76.69%);
+	border: 1px solid rgba(179, 239, 189, 0.2);
+	border-radius: 5px;
+}
+.totalsTab{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-grow: 1;
+    padding: 30px 0;
+	border-right: 1px solid rgba(179, 239, 189, 0.2);
+}
+.totalsTab div{
+	cursor: auto;
+}
+.totalsTab:last-child{
+	border-right: none;
+}
+.totalsInfoText{
+	margin-left: 18px;
+}
+.totalsNumbers{
+	text-align: left;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 130%;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.totalsText{
+	text-align: left;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 130%;
+	text-transform: uppercase;
+	color: #B3EFBD;
+}
+.balanceAndReferrals{
+	display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.balanceWhole:first-child{
+	padding-right: 20px;
+}
+.balanceWhole:last-child{
+	padding-left: 20px;
+}
+.balanceAndReferralsTitles{
+	text-align: left;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 120%;
+	color: #FFFFFF;
+	margin: 50px 0 24px;
+}
+.balanceAndReferrals > div {
+	flex-grow: 1;
+    width: 50%;
+}
+.balanceInfoProfile{
+	background: url('/img/yourBalanceBack.svg');
+	padding: 18px 0;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    border: 1px solid rgba(132, 145, 170, 0.1);
+}
+.balanceBlockProfile{
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+.totalBalans{
+	padding: 0 24px;
+	flex-grow: 1;
+    text-align: left;
+}
+.headTextOfBalanceBlock{
+	padding-bottom: 56px;
+	font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #7CA59E;
+}
+.theBalance{
+	
+}
+.forDollars{
+	font-weight: 300;
+    font-size: 18px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.forCrypto{
+	font-weight: 300;
+    font-size: 15px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #7CA59E;
+}
+.forDollars span{
+	font-weight: bold;
+    font-size: 32px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.forCrypto span{
+	font-weight: 300;
+    font-size: 22px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #7CA59E;
+}
+.totalsTab > div > div > div > div > div{
+	padding: 0px;
+}
+.totalsTab > div{
+	filter: drop-shadow(-7px 10px 20px rgba(13, 75, 46, 0.3));
+}
+.itsInProfileMan{
+	
+}
+.itsInProfileMan a {
+    display: none;
+}
+.itsInProfileMan .name{
+	margin-left: 0;
+}
+.joinMod img{
+	visibility: hidden;
+}
+.joinMod > div:first-child > div{
+	background: rgba(9, 9, 14, 0.6);
+    box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.3);
+	position: relative;
+	font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7CA59E;
+	cursor: pointer;
+}
+.joinMod > div:first-child > div > div {
+	display: block;
+	position: absolute;
+}
+
+@media screen and (max-width: 1600px) {
+	
+}
+
+@media screen and (max-width: 999px){
+	.profile{
+		display: block;
+		margin-right: 0;
+		align-items: center;
+		justify-content: center;
+	}
+	.flexOnMobile{
+		display: flex;
+	}
+	.profile .noMarginLeftOnMobile{
+		margin-left: 0;
+		text-align: center;
+	}
+	.profile .noMarginLeftOnMobile .title{
+		justify-content: center;
+	}
+	.profileEvent .name, .name {
+		font-size: 26px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.flexOnMobile{
+		display: block;
+		text-align: center;
+	}
+	.title{
+		margin-bottom: 20px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		display: flex;
+	}
+	.balance{
+		margin-bottom: 30px;
+	}
+	.flexOnMobile > div > img{
+		width: auto;
+	}
+	.flexOnMobile > div:last-child{
+		display: block;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	.flexOnMobile > div:last-child img {
+		margin: 0 10px;
+	}
+	.reverse .titleSub {
+		text-align: center;
+	}
+	.titleSub{
+		margin: 10px 0 5px 0;
+	}
+	
+	.totals{
+		display: block;
+		padding: 8px 25px;
+	}
+	.totalsTab{
+		border-right: none;
+		padding: 10px 0;
+		justify-content: flex-start;
+	}
+	.balanceAndReferrals{
+		display: block;
+	}
+	.balanceAndReferrals > div {
+		width: 100%;
+	}
+	.headTextOfBalanceBlock {
+		padding-bottom: 20px;
+	}
+	.balanceInfoProfile{
+		background-size: cover;
+	}
+	.totalBalans {
+		padding: 0 15px;
+	}
+	.forDollars, .forDollars span{
+		font-size: 20px;
+	}
+	.forCrypto span {
+		font-size: 16px;
+	}
+	.balanceWhole:last-child{
+		padding-left: 0;
+	}
+	
+	.profileEvent{
+		width: 100%;
+	}
+	.profileEvent .info .titleSub, .profileEvent.reverse .info .titleSub {
+		text-align: center;
+	}
+	.profileEvent .labels, .profileEvent.reverse  .labels  {
+		display: flex;
+		padding-top: 5px;
+		float: none;
+		align-items: center;
+		justify-content: center;
+	}
+	.flexOnMobile > div img {
+		width: 100%;
+		height: auto;
+	}
+	
+}

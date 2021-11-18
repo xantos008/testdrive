@@ -1,0 +1,48 @@
+.progressBarAndInfo{
+	margin-bottom: 30px;
+}
+.progressBarBlock{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progressBar{
+	width: 401px;
+	height: 3px;
+	background: #09090E;
+	border-radius: 5px;
+	margin: 0 10px;
+}
+.progress {
+	background: linear-gradient(357.04deg, #46AC56 25.23%, #38B179 76.69%);
+	box-shadow: 0px 0px 7px rgba(56, 177, 121, 0.7);
+	border-radius: 5px;
+	height: 3px;
+}
+.referralInfo{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-top: 6px;
+}
+.referralInfoText{
+	font-size: 13px;
+	line-height: 130%;
+	color: #ADCCC7;
+}
+.referralInfoIcon{
+	margin-left: 10px;
+	cursor: pointer;
+}
+.referralInfoTextSecond{
+	font-size: 13px;
+	line-height: 130%;
+	color: #7CA59E;
+}
+.referralInfoTextSecond.colored{
+	color: #ADC2CC;
+}
+.referralInfoTextSecond span{
+	color: #3eaf6b;
+	font-weight: 400;
+}

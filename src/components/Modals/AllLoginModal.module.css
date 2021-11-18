@@ -1,0 +1,126 @@
+.overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+.allLogin{
+	position: relative;
+	width: 650px;
+	background: linear-gradient(282.53deg, #46AC56 25.23%, #38B179 76.69%);
+	border-radius: 8px;
+}
+.bodyMaker{
+	background: none;
+}
+.closeIcon{
+	position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 25px;
+    top: 8px;
+    cursor: pointer;
+}
+.flexity{
+	display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.leftOneBlock{
+	width: 240px;
+}
+.rightOneBlock{
+	width: 240px;
+}
+.blockTitle{
+	font-size: 18px;
+    font-family: Proxima Nova Extrabold;
+	margin-bottom: 22px;
+}
+.crypList{
+	
+}
+.blockCenter {
+	text-align: center;
+	margin-top: 35px;
+}
+.activeOnBlock{
+	margin-bottom: 16px;
+}
+.orBlock{
+	font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+	position: relative;
+}
+.orBlock::after,.orBlock::before{
+	content: "";
+	background: #B7EEC2;
+    opacity: 0.2;
+    position: absolute;
+	height:1px;
+	width: 40%;
+	top: calc(50% - 1px);
+}
+.orBlock::before{
+	left: 0;
+}
+.orBlock::after{
+	right: 0;
+}
+.offtenOnBlock{
+	margin-top: 13px;
+}
+.offtenOnBlock > div:first-child {
+    margin-bottom: 8px;
+}
+.noWallet{
+	font-size: 18px;
+	line-height: 130%;
+	text-align: center;
+	color: #B7EEC2;
+	cursor: pointer;
+	text-decoration: none;
+	font-family: Proxima Nova Light;
+}
+.noWallet:hover{
+	text-decoration: underline;
+}
+.allLoginModalButton{
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: center;
+	background: #FFFFFF;
+	border-radius: 40px;
+	box-shadow: none;
+	display: block;
+	width: 250px;
+	padding: 20px 0px 18px;
+	height: 18px;
+	margin: 0 auto;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+	position: relative;
+	top: 0;
+	transition: all .3s ease-out;
+}
+.allLoginModalButton:hover{
+	background: #fff;
+    top: -4px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.36);
+}
+.allLoginModalButton p{
+	margin: 0;
+	padding: 0;
+	line-height: 18px;
+	/*color: linear-gradient(309.2deg, #46AC56 25.23%, #38B179 76.69%);*/
+	background: -webkit-linear-gradient(309.2deg, #46AC56 25.23%, #38B179 76.69%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,86 @@
+.sponsorship {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #121220;
+  border-radius: 3px;
+  padding: 30px 50px;
+  margin: 30px 0;
+  color: rgba(255, 255, 255, 0.3);
+}
+.sponsorship > div:nth-child(1) {
+    width: 40%
+}
+.sponsorship > div:nth-child(3) {
+    width: 40%
+}
+.sponsorship input {
+  background-color: #0c0c17;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 15px;
+  border: 0;
+  width: 40px;
+  text-align: center;
+}
+.sponsorship span {
+	padding:0 15px;
+}
+.sponsorshipSep {
+  width: 1px;
+  height: 93px;
+  background-color: #3b3b54;
+}
+.sponsorshipCurr {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sponsorshipTitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
+}
+
+.comis {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.green {
+  color: #1fde39;
+}
+
+.right {
+  min-width: 200px;
+}
+@media screen and (max-width: 767px){
+	.sponsorship{ 
+		display: block;
+		padding: 0;
+		background: transparent;
+	}
+	.sponsorshipSep {
+		width: 100%;
+		height: 2px;
+		margin: 15px 0;
+	}
+	.sponsorship input{
+		width: 100%;
+		font-size: 16px;
+		padding: 17px 24px;
+		height: auto;
+		border-radius: 10px;
+	}
+	.sponsorship > div:nth-child(1) {
+		width: auto;
+	}
+	.sponsorshipTitle{
+		margin-bottom: 4px;
+		color: #ADCCC7;
+		text-align: left;
+		font-family: Proxima Nova Regular;
+	}
+	.sponsorship span {
+		color: #ADCCC7;
+	}
+}
